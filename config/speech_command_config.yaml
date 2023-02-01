@@ -1,0 +1,16 @@
+# Flask server config
+server_config:
+  # host ip
+  host: "0.0.0.0"
+  # port
+  port: 5000
+# AI config
+ai_model_config:
+  #Audio origin rate
+  sample_rate: 16000
+  #Transformed audio rate
+  new_sample_rate: 8000
+  #Path checkpoint speech command model
+  checkpoint_path: 'models/checkpoints/speech_command_m5_v1.pt'
+  #List label of speech command
+  label_path: 'config/labels.txt'
