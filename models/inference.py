@@ -19,7 +19,7 @@ class SpeechCommand():
             self.labels = f.readlines()
             self.labels = [label.replace('\n', '') for label in self.labels]
 
-        #Load model
+        #Load model 
         self.model = M5(n_input=1, n_output=len(self.labels))
         self.model.load_state_dict(torch.load(config['ai_model_config']['checkpoint_path'], map_location=torch.device(self.device)))
         self.model.to(self.device)
