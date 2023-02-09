@@ -19,7 +19,7 @@ root
     |requirements.txt
 ```
 ## Detail about the experiments
-[This notebook](https://github.com/gnvml/Speech-Command-Classification-with-Flask/blob/master/speech_command_classification.ipynb) implemented speech command recognition using convolutional neural networks trained on the Google SpeechCommand dataset.
+[This notebook](https://github.com/minhson1411/Speech-Command-Classification-with-Flask/blob/master/speech_command_classification.ipynb) implemented speech command recognition using convolutional neural networks trained on the Google SpeechCommand dataset.
 
 M5, M18 layer architecture convolutional neural networks were implemented and the networks were trained on the time domain waveform inputs of the SpeechCommand dataset.
 
@@ -34,9 +34,9 @@ Networks were trained with increased 30 and 50 epochs with incremental improveme
 *   30 Epoch network accuracy:  M5: 92%, M18: 95%
 *   50 Epoch network accuracy: M5: 94%, M18: 98%
 
-### Access [live notebook](https://colab.research.google.com/drive/1V-HQeaBzyZu7nyJNo7uTAdE7i3_w59-T?usp=sharing) result for more details
+### Access [live notebook](https://colab.research.google.com/drive/1480M22qpcSxDUK2x5YqUrqhyY_j-EFYv?usp=sharing) result for more details
 
-![LossAndAccuracy](https://github.com/gnvml/Speech-Command-Classification-with-Flask/blob/master/experiment/loss_acc.png)
+![LossAndAccuracy](https://github.com/minhson1411/Speech-Command-Classification-with-Flask/blob/master/experiment/loss_acc.png)
 
 
 ### Build docker and run demo
@@ -46,12 +46,12 @@ cd path-to-this-project
 docker build -t speech_command .
 docker run --rm -p4999:5000 -v$PWD:/code speech_command
 ```
-*Note: If run fail with docker, change [config](https://github.com/gnvml/Speech-Command-Classification-with-Flask/blob/master/config/speech_command_config.yaml) project with another port*
+*Note: If run fail with docker, change [config](https://github.com/minhson1411/Speech-Command-Classification-with-Flask/blob/master/config/speech_command_config.yaml) project with another port*
 
 Access: http://localhost:4999/ to open demo website
 
 ![Homepage](https://github.com/gnvml/Speech-Command-Classification-with-Flask/blob/master/experiment/home.png)
-![Demo](https://github.com/gnvml/Speech-Command-Classification-with-Flask/blob/master/experiment/demo.png)
+![Demo](https://github.com/minhson1411/Speech-Command-Classification-with-Flask/blob/d2463c9d70c7e35348e60be4c9bd48d797a352f5/experiment/demo.png)
 
 
 
